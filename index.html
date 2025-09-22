@@ -8,13 +8,28 @@
       name="description"
       content="Profil, riwayat pendidikan, hobi, dan pengalaman organisasi."
     />
+
+    <!-- Favicon & Styles -->
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" href="assets/styles.css" />
+
+    <!-- Warna bar browser (disesuaikan dengan tema) -->
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#0b1220"
+      media="(prefers-color-scheme: dark)"
+    />
   </head>
   <body>
+    <!-- ===== NAVIGASI ===== -->
     <header>
       <nav>
-        <a href="#home"><strong>I Komang Suyanta</strong></a> ·
+        <a href="#home"><strong>Biodata</strong></a> ·
         <a href="#riwayat">Riwayat Pendidikan</a> · <a href="#hobi">Hobi</a> ·
         <a href="#organisasi">Pengalaman Organisasi</a> ·
         <a href="#kontak">Kontak</a>
@@ -26,19 +41,25 @@
     </header>
 
     <main>
+      <!-- ===== HOME / BIODATA ===== -->
       <section id="home">
         <h1>Profil Mahasiswa Udayana</h1>
+
+        <!-- Foto profil -->
         <img src="assets/profile.jpg" alt="Foto profil I Komang Suyanta" />
 
-        <div class="socials">
+        <!-- Ikon Sosial -->
+        <div class="socials" aria-label="Tautan Sosial">
+          <!-- Instagram (akun bisnis) -->
           <a
             class="instagram"
             href="https://instagram.com/dolanpenidatrip"
             target="_blank"
             rel="noopener"
-            aria-label="Instagram"
-            title="Instagram"
+            aria-label="Instagram (akun bisnis)"
+            title="Instagram (akun bisnis)"
           >
+            <!-- Instagram icon -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -55,14 +76,17 @@
               <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
             </svg>
           </a>
+
+          <!-- Facebook (akun bisnis) -->
           <a
             class="facebook"
             href="https://facebook.com/profile.php?id=61565753124032"
             target="_blank"
             rel="noopener"
-            aria-label="Facebook"
-            title="Facebook"
+            aria-label="Facebook (akun bisnis)"
+            title="Facebook (akun bisnis)"
           >
+            <!-- Facebook icon -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -79,14 +103,17 @@
               />
             </svg>
           </a>
+
+          <!-- LinkedIn (akun utama) -->
           <a
             class="linkedin"
             href="https://www.linkedin.com/in/kgantaa"
             target="_blank"
             rel="noopener"
-            aria-label="LinkedIn"
-            title="LinkedIn"
+            aria-label="LinkedIn (akun utama)"
+            title="LinkedIn (akun utama)"
           >
+            <!-- LinkedIn icon -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -101,14 +128,49 @@
               <rect x="2" y="9" width="4" height="12"></rect>
               <circle cx="4" cy="4" r="2"></circle>
               <path
-                d="M16 8a 6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4"
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4"
               ></path>
+            </svg>
+          </a>
+
+          <!-- GitHub (akun utama) -->
+          <a
+            class="github"
+            href="https://github.com/kganta22"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub (akun utama)"
+            title="GitHub (akun utama)"
+          >
+            <!-- GitHub icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M15 22v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 18 3.5 5.07 5.07 0 0 0 17.91 1S16.73.65 14 2.48a13.38 13.38 0 0 0-8 0C3.27.65 2.09 1 2.09 1A5.07 5.07 0 0 0 2 3.5 5.44 5.44 0 0 0 .5 8.52c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 6 18.13V22"
+              />
             </svg>
           </a>
         </div>
 
+        <!-- Klarifikasi singkat agar tidak membingungkan penilai -->
+        <small class="note-sosmed">
+          Catatan: tautan IG & FB mengarah ke akun <em>bisnis</em> yang saya
+          kelola karena saya tidak bermain sosial media. Untuk profil
+          profesional/pribadi, silahkan akses LinkedIn dan GitHub.
+        </small>
+
+        <!-- ===== Biodata (label | : | nilai) ===== -->
         <h2>Biodata</h2>
-        <table>
+        <table aria-label="Tabel biodata">
           <colgroup>
             <col />
             <col />
@@ -142,6 +204,7 @@
             </td>
           </tr>
         </table>
+
         <p>
           Mahasiswa Teknologi Informasi Universitas Udayana yang suka
           mengeksplor data science dan mengembangkan kewirausahaan di bidang
@@ -152,6 +215,7 @@
 
       <hr />
 
+      <!-- ===== RIWAYAT ===== -->
       <section id="riwayat">
         <h2>Riwayat Pendidikan</h2>
         <ul>
@@ -164,6 +228,7 @@
 
       <hr />
 
+      <!-- ===== HOBI ===== -->
       <section id="hobi">
         <h2>Hobi</h2>
         <ol>
@@ -176,10 +241,11 @@
 
       <hr />
 
+      <!-- ===== ORGANISASI ===== -->
       <section id="organisasi">
         <h2>Pengalaman Organisasi</h2>
         <div class="table-wrap">
-          <table>
+          <table aria-label="Tabel pengalaman organisasi">
             <thead>
               <tr>
                 <th>Tahun</th>
@@ -222,6 +288,7 @@
 
       <hr />
 
+      <!-- ===== KONTAK (Google Form) ===== -->
       <section id="kontak">
         <h2>Kontak</h2>
         <p>
@@ -234,6 +301,7 @@
           frameborder="0"
           marginheight="0"
           marginwidth="0"
+          title="Formulir Kontak"
         >
           Memuat…
         </iframe>
@@ -244,6 +312,7 @@
       <p>© 2025 • I Komang Suyanta — <a href="#home">Kembali ke atas ↑</a></p>
     </footer>
 
+    <!-- Toggle tema -->
     <script src="assets/main.js" defer></script>
   </body>
 </html>

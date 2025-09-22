@@ -153,7 +153,7 @@ img[alt^="Foto profil"] {
 .socials {
   display: flex;
   gap: 10px;
-  margin: 10px 0 16px;
+  margin: 10px 0 12px;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -181,6 +181,18 @@ img[alt^="Foto profil"] {
 .socials a.linkedin {
   color: var(--in);
 }
+/* GitHub: gunakan warna teks aktif agar kontras di light & dark */
+.socials a.github {
+  color: var(--text);
+}
+
+/* Klarifikasi sosmed (akun bisnis) */
+.note-sosmed {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
 
 /* ========= BIODATA (label : nilai) ========= */
 #home h2 {
@@ -206,7 +218,7 @@ img[alt^="Foto profil"] {
 #home table td:nth-child(2) {
   text-align: center;
   padding: 0 6px;
-}
+} /* ":" */
 #home p {
   color: var(--muted);
   max-width: 760px;
@@ -226,6 +238,9 @@ img[alt^="Foto profil"] {
 #organisasi {
   overflow-x: auto;
 }
+#organisasi .table-wrap {
+  overflow-x: auto;
+} /* wrapper aman */
 #organisasi table {
   width: 100%;
   min-width: 640px;
